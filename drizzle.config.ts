@@ -12,6 +12,10 @@ export default defineConfig({
   dbCredentials: {
     url: process.env.DATABASE_URL,
   },
+  migrations: {
+    schema: 'schema_commun_v2',
+    table: '__drizzle_migrations',
+  },
   verbose: true,
   strict: true,
 })
